@@ -1,5 +1,5 @@
-Summary:	Tool for creating converters from dbf files to PGSQL commands.
-Summary(pl):	Narzêdzie do tworzenia konwertera plikow dbf na instrukcje PGSQL
+Summary:	Tool for creating converters from dbf files to PGSQL commands
+Summary(pl):	Narzêdzie do tworzenia konwerterów plików dbf na instrukcje PGSQL
 Name:		dbf2pos
 Version:	0.1.4
 Release:	1
@@ -21,15 +21,15 @@ wykorzystania pod Uniksem.
 
 %package expdbflib
 Summary:	dbf2pos library
-Summary(pl):	bibloteka dbf2pos
+Summary(pl):	Biblioteka dbf2pos
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
 
 %description expdbflib
-Dbf2pos library.
+dbf2pos library.
 
 %description expdbflib -l pl
-Dbf2pos library.
+Biblioteka dbf2pos.
 
 %prep
 %setup -q
@@ -39,20 +39,20 @@ Dbf2pos library.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d		$RPM_BUILD_ROOT{%{_bindir},%{_examplesdir}/%{name},%{_includedir},%{_libdir}}
-install dbf2pos	$RPM_BUILD_ROOT%{_bindir}/
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_examplesdir}/%{name},%{_includedir},%{_libdir}}
+install dbf2pos	$RPM_BUILD_ROOT%{_bindir}
 install *.d2p	$RPM_BUILD_ROOT%{_examplesdir}/%{name}
-install  expdbflib/*.h	$RPM_BUILD_ROOT%{_includedir}
-install  expdbflib/*.a	$RPM_BUILD_ROOT%{_libdir}
+install expdbflib/*.h	$RPM_BUILD_ROOT%{_includedir}
+install expdbflib/*.a	$RPM_BUILD_ROOT%{_libdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc  README.polish README.english TODO CREDITS CHANGES
+%doc README.polish README.english TODO CREDITS CHANGES
 %attr(755,root,root) %{_bindir}/*
-%{_examplesdir}/%{name}/*
+%{_examplesdir}/%{name}
 
 %files expdbflib
 %defattr(644,root,root,755)
@@ -60,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/dbf.h
 %{_includedir}/defs.h
 %{_includedir}/global.h
-%{_libdir}/*
+%{_libdir}/*.a
