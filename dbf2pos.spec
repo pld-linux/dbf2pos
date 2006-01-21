@@ -7,7 +7,6 @@ License:	GPL
 Group:		Applications/Databases
 Source0:	http://www.mat.uni.torun.pl/~jerzy/wegorz/%{name}-%{version}.tar.gz
 # Source0-md5:	4eb86e767495b96e72200a5181a8e20f
-Icon:		dbview.xpm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
