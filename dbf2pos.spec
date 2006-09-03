@@ -23,7 +23,7 @@ wykorzystania pod Uniksem.
 Summary:	dbf2pos library
 Summary(pl):	Biblioteka dbf2pos
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description expdbflib
 dbf2pos library.
