@@ -1,5 +1,5 @@
 Summary:	Tool for creating converters from dbf files to PGSQL commands
-Summary(pl.UTF-8):   Narzędzie do tworzenia konwerterów plików dbf na instrukcje PGSQL
+Summary(pl.UTF-8):	Narzędzie do tworzenia konwerterów plików dbf na instrukcje PGSQL
 Name:		dbf2pos
 Version:	0.1.4
 Release:	1
@@ -21,7 +21,7 @@ wykorzystania pod Uniksem.
 
 %package expdbflib
 Summary:	dbf2pos library
-Summary(pl.UTF-8):   Biblioteka dbf2pos
+Summary(pl.UTF-8):	Biblioteka dbf2pos
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
