@@ -1,5 +1,5 @@
 Summary:	Tool for creating converters from dbf files to PGSQL commands
-Summary(pl):	Narzêdzie do tworzenia konwerterów plików dbf na instrukcje PGSQL
+Summary(pl.UTF-8):   NarzÄ™dzie do tworzenia konwerterÃ³w plikÃ³w dbf na instrukcje PGSQL
 Name:		dbf2pos
 Version:	0.1.4
 Release:	1
@@ -14,21 +14,21 @@ dbf2pos is a little tool that will display dBase III and IV files. You
 can also use it to convert your old .dbf files for further use with
 Unix.
 
-%description -l pl
-dbf2pos jest ma³ym programem wy¶wietlaj±cym zawarto¶æ plików dBase III
-i IV. Mo¿na go wykorzystaæ do konwersji starych plików .dbf do
+%description -l pl.UTF-8
+dbf2pos jest maÅ‚ym programem wyÅ›wietlajÄ…cym zawartoÅ›Ä‡ plikÃ³w dBase III
+i IV. MoÅ¼na go wykorzystaÄ‡ do konwersji starych plikÃ³w .dbf do
 wykorzystania pod Uniksem.
 
 %package expdbflib
 Summary:	dbf2pos library
-Summary(pl):	Biblioteka dbf2pos
+Summary(pl.UTF-8):   Biblioteka dbf2pos
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description expdbflib
 dbf2pos library.
 
-%description expdbflib -l pl
+%description expdbflib -l pl.UTF-8
 Biblioteka dbf2pos.
 
 %prep
